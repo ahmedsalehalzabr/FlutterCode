@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:newproject/core/helpers/extensions.dart';
+import 'package:newproject/core/routing/routes.dart';
 import 'package:newproject/core/theming/styles.dart';
 
 class GetStartedButton extends StatelessWidget {
@@ -11,7 +13,7 @@ class GetStartedButton extends StatelessWidget {
       padding: EdgeInsets.only(left: 30.h,right: 30.h),
       child: TextButton(
         onPressed: () {
-          // context.pushNamed(Routes.loginScreen);
+          context.pushNamed(Routes.loginScreen);
         },
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(ColorsManager.mainBlue),
